@@ -1,0 +1,9 @@
+{
+    "name": "finedust",
+    "version-string": "1.0.0",
+    "dependencies": [
+      "jsoncpp",
+      "curl",
+      "libiconv"
+    ]
+  }
