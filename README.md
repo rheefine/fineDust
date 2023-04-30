@@ -6,8 +6,8 @@ My first project.
 It is simple C++ project that uses Class & Open API service.  
 Due to this project, I can unserstand Class, url-encoding, utf-encoding and Open API.
 
-Class¿Í Open Api ¼­ºñ½º¸¦ È°¿ëÇÑ ÀúÀÇ Ã¹¹øÂ° ÇÁ·ÎÁ§Æ® ÀÔ´Ï´Ù.  
-C++·Î Open Api¿¡¼­ ¹Ì¼¼¸ÕÁö µ¥ÀÌÅÍ¸¦ ÆÄ½ÌÇÏ´Â °úÁ¤À» ÅëÇØ, Class ¿Í url-encoding, utf-encoding, Open Api µî¿¡ ´ëÇØ ÀÌÇØÇÒ ¼ö ÀÖ¾ú½À´Ï´Ù.  
+Classì™€ Open Api ì„œë¹„ìŠ¤ë¥¼ í™œìš©í•œ ì €ì˜ ì²«ë²ˆì§¸ í”„ë¡œì íŠ¸ ì…ë‹ˆë‹¤.  
+C++ë¡œ Open Apiì—ì„œ ë¯¸ì„¸ë¨¼ì§€ ë°ì´í„°ë¥¼ íŒŒì‹±í•˜ëŠ” ê³¼ì •ì„ í†µí•´, Class ì™€ url-encoding, utf-encoding, Open Api ë“±ì— ëŒ€í•´ ì´í•´í•  ìˆ˜ ìˆì—ˆìŠµë‹ˆë‹¤.  
 <br/>
 
 ## References
@@ -25,13 +25,13 @@ C++·Î Open Api¿¡¼­ ¹Ì¼¼¸ÕÁö µ¥ÀÌÅÍ¸¦ ÆÄ½ÌÇÏ´Â °úÁ¤À» ÅëÇØ, Class ¿Í url-encoding
 
 ### Servie key
 
-¼­ºñ½ºÅ°´Â [°ø°øµ¥ÀÌÅÍ Æ÷ÅĞ](https://www.data.go.kr/index.do) È¸¿ø°¡ÀÔ ÈÄ 
-[[ÃøÁ¤¼ÒÁ¤º¸]](https://www.data.go.kr/data/15073877/openapi.do), 
-[[´ë±â¿À¿°Á¤º¸]](https://www.data.go.kr/data/15073861/openapi.do)¿¡¼­ ¹«·á·Î ¹ß±Ş¹ŞÀ¸½Ç ¼ö ÀÖ½À´Ï´Ù.  
-¹ß±Ş ¹ŞÀº ¼­ºñ½ºÅ°´Â `src/search.cpp` ÆÄÀÏÀÇ ´ÙÀ½°ú °°Àº ºÎºĞ¿¡ ÀÔ·ÂÇÏ½Ã¸é µË´Ï´Ù.  
+ì„œë¹„ìŠ¤í‚¤ëŠ” [ê³µê³µë°ì´í„° í¬í„¸](https://www.data.go.kr/index.do) íšŒì›ê°€ì… í›„ 
+[[ì¸¡ì •ì†Œì •ë³´]](https://www.data.go.kr/data/15073877/openapi.do), 
+[[ëŒ€ê¸°ì˜¤ì—¼ì •ë³´]](https://www.data.go.kr/data/15073861/openapi.do)ì—ì„œ ë¬´ë£Œë¡œ ë°œê¸‰ë°›ìœ¼ì‹¤ ìˆ˜ ìˆìŠµë‹ˆë‹¤.  
+ë°œê¸‰ ë°›ì€ ì„œë¹„ìŠ¤í‚¤ëŠ” `src/search.cpp` íŒŒì¼ì˜ ë‹¤ìŒê³¼ ê°™ì€ ë¶€ë¶„ì— ì…ë ¥í•˜ì‹œë©´ ë©ë‹ˆë‹¤.  
 ```C++
 char* servicekey1(void) {
-	std::string apiKey1 = "{¿©±â¿¡ ¼­ºñ½ºÅ°¸¦ ÀÔ·ÂÇÏ¼¼¿ä [https://www.data.go.kr/data/15073877/openapi.do]}";
+	std::string apiKey1 = "{ì—¬ê¸°ì— ì„œë¹„ìŠ¤í‚¤ë¥¼ ì…ë ¥í•˜ì„¸ìš” [https://www.data.go.kr/data/15073877/openapi.do]}";
 	std::string param_apikey1 = "servicekey=" + apiKey1;
     static char ch_apiKey1[256];
     strcpy_s(ch_apiKey1, param_apikey1.c_str());
@@ -40,17 +40,23 @@ char* servicekey1(void) {
 
 
 char* servicekey2(void) {
-	std::string apiKey2 = "{¿©±â¿¡ ¼­ºñ½ºÅ°¸¦ ÀÔ·ÂÇÏ¼¼¿ä [https://www.data.go.kr/data/15073861/openapi.do]}";
+	std::string apiKey2 = "{ì—¬ê¸°ì— ì„œë¹„ìŠ¤í‚¤ë¥¼ ì…ë ¥í•˜ì„¸ìš” [https://www.data.go.kr/data/15073861/openapi.do]}";
 	std::string param_apikey2 = "servicekey=" + apiKey2;
     static char ch_apiKey2[256];
     strcpy_s(ch_apiKey2, param_apikey2.c_str());
     return ch_apiKey2;
 }
 ```  
-  
+
+### Setup  
+
+```console
+$ git clone https://github.com/rheefine/fineDust.git
+```
+
 ### Build
 
-ÀÌ ÇÁ·ÎÁ§Æ®´Â `win32` È¯°æ¿¡¼­ [CMake](https://cmake.org/)¿Í [VcPkg](https://github.com/microsoft/vcpkg)¸¦ »ç¿ëÇÏ¿© ´ÙÀ½°ú °°ÀÌ ºôµåÇÒ ¼ö ÀÖ½À´Ï´Ù.  
+ì´ í”„ë¡œì íŠ¸ëŠ” `win32` í™˜ê²½ì—ì„œ [CMake](https://cmake.org/)ì™€ [VcPkg](https://github.com/microsoft/vcpkg)ë¥¼ ì‚¬ìš©í•˜ì—¬ ë‹¤ìŒê³¼ ê°™ì´ ë¹Œë“œí•  ìˆ˜ ìˆìŠµë‹ˆë‹¤.  
 
 ```console
 $ cmake -B build -S . "-DCMAKE_TOOLCHAIN_FILE=[path to vcpkg]\vcpkg\scripts\buildsystems\vcpkg.cmake"
