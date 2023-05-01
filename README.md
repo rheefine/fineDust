@@ -7,18 +7,7 @@ It is simple C++ project that uses Class & Open API service.
 Due to this project, I can unserstand Class, url-encoding, utf-encoding and Open API.
 
 Class와 Open Api 서비스를 활용한 저의 첫번째 프로젝트 입니다.  
-C++로 Open Api에서 미세먼지 데이터를 파싱하는 과정을 통해, Class 와 url-encoding, utf-encoding, Open Api 등에 대해 이해할 수 있었습니다.  
-<br/>
-
-## References
-
-* [libcurl examples](https://curl.se/libcurl/c/example.html)  
-  * https://stackoverflow.com/questions/50013204/jsoncpp-to-parse-from-url
-  * https://stackoverflow.com/questions/19582838/add-paramethers-to-libcurl-get-in-c/19582883#19582883
-* [cp949 <-> UTF-8 / using libiconv](https://webnautes.tistory.com/1466)
-* [URL-encode](http://codepad.org/lCypTglt)
-* [Unicode to UTF-8](https://stackoverflow.com/questions/2619897/how-can-i-deal-with-this-encoding)
-* https://3001ssw.tistory.com/79  
+C++로 Open Api에서 미세먼지 데이터를 크롤링하고 파싱하는 과정을 통해, Class 와 url-encoding, utf-encoding, Open Api 등에 대해 이해할 수 있었습니다.  
 <br/>
 
 ## How To
@@ -67,6 +56,17 @@ $ cmake --build build --config debug
 ```console
 $ .\build\debug\finedust.exe
 ```
+<br/>
+
+## References
+
+* [libcurl examples](https://curl.se/libcurl/c/example.html)  
+  * https://stackoverflow.com/questions/50013204/jsoncpp-to-parse-from-url
+  * https://stackoverflow.com/questions/19582838/add-paramethers-to-libcurl-get-in-c/19582883#19582883
+* [cp949 <-> UTF-8 / using libiconv](https://webnautes.tistory.com/1466)
+* [URL-encode](http://codepad.org/lCypTglt)
+* [Unicode to UTF-8](https://stackoverflow.com/questions/2619897/how-can-i-deal-with-this-encoding)
+* https://3001ssw.tistory.com/79  
 <br/>
 
 ***
